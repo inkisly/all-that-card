@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:padding="5dp"
+	android:layout_height="74.66dp">
+	<ImageView android:src="@drawable/icon" android:layout_width="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:id="@+id/ivBank" android:layout_height="fill_parent"></ImageView>
+	<LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1"
+		android:layout_toRightOf="@id/ivBank" android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<TextView android:id="@+id/tvBankName" android:text="TextView"
+			android:layout_weight="1" android:gravity="center_vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"></TextView>
+		<TextView android:id="@+id/tvBankNumber" android:text="TextView"
+			android:layout_weight="1" android:gravity="center_vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"></TextView>
+	</LinearLayout>
+
+</RelativeLayout>
