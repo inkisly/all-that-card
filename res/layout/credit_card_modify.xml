@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<ScrollView android:paddingBottom="0dp" android:paddingLeft="0dp"
+		android:paddingRight="0dp" android:paddingTop="0dp"
+		android:layout_width="fill_parent" android:layout_weight="1"
+		android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical"
+			android:padding="5dp" android:layout_height="fill_parent"
+			android:layout_width="fill_parent">
+			<LinearLayout android:id="@+id/LinearLayout1"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:layout_height="wrap_content" android:id="@+id/tvCardCompany"
+					android:text="@string/credit_card_company" android:layout_width="65dp"></TextView>
+				<EditText android:layout_height="wrap_content" android:id="@+id/etCardCompany"
+					android:layout_width="fill_parent" android:minLines="1"
+					android:lines="1" android:maxLines="1" android:textSize="15sp">
+				</EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout2"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:layout_height="wrap_content" android:id="@+id/tvCardName"
+					android:text="@string/credit_card_name" android:layout_width="65dp"></TextView>
+				<EditText android:layout_height="wrap_content" android:id="@+id/etCardName"
+					android:layout_width="fill_parent" android:minLines="1"
+					android:lines="1" android:maxLines="1" android:hint="@string/credit_card_name_hint"
+					android:textSize="15sp">
+				</EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout3"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:layout_height="wrap_content" android:id="@+id/tvCardNumber"
+					android:text="@string/credit_card_number" android:layout_width="65dp"></TextView>
+				<EditText android:layout_height="wrap_content"
+					android:layout_width="fill_parent" android:minLines="1"
+					android:lines="1" android:maxLines="1"
+					android:hint="@string/credit_card_number_hint" android:textSize="15sp"
+					android:id="@+id/etCardNumber"></EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout4"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:layout_height="wrap_content"
+					android:text="@string/credit_card_term_of_validity"
+					android:layout_width="65dp" android:id="@+id/tvValid"></TextView>
+				<EditText android:id="@+id/etMonth" android:layout_height="wrap_content"
+					android:minLines="1" android:lines="1" android:maxLines="1"
+					android:maxLength="2" android:layout_width="50dp"
+					android:hint="@string/credit_card_term_month_hint"
+					android:textSize="15sp" android:gravity="center"></EditText>
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/tvMonth"
+					android:text="@string/month"></TextView>
+				<EditText android:id="@+id/etYear" android:layout_height="wrap_content"
+					android:minLines="1" android:lines="1" android:maxLines="1"
+					android:maxLength="2" android:layout_width="50dp"
+					android:hint="@string/credit_card_term_year_hint" android:textSize="15sp"
+					android:gravity="center"></EditText>
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/tvYear"
+					android:text="@string/year"></TextView>
+				<TextView android:id="@+id/tvCSV" android:text="@string/credit_card_csv"
+					android:layout_height="wrap_content" android:layout_marginLeft="20dp"
+					android:layout_width="40dp"></TextView>
+				<EditText android:layout_height="wrap_content" android:id="@+id/etCSV"
+					android:minLines="1" android:lines="1" android:maxLines="1"
+					android:maxLength="3" android:layout_width="fill_parent"
+					android:hint="@string/credit_card_csv_hint" android:textSize="15sp"
+					android:gravity="center"></EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/linearLayout7"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView android:text="@string/credit_card_payment"
+					android:layout_height="wrap_content" android:id="@+id/tvPayment"
+					android:layout_width="65dp"></TextView>
+				<EditText android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:inputType="date"
+					android:id="@+id/etPayment" android:layout_weight="1"
+					android:textSize="15sp">
+				</EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout5"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:id="@+id/tvCallCenter"
+					android:layout_width="65dp" android:layout_height="wrap_content"
+					android:text="@string/call_center"></TextView>
+				<EditText android:hint="@string/call_center_hint"
+					android:layout_weight="1" android:lines="1" android:maxLines="1"
+					android:id="@+id/etCallCenter" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:minLines="1"
+					android:textSize="15sp"></EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout6"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:id="@+id/tvMemo" android:layout_height="wrap_content"
+					android:layout_width="65dp" android:text="@string/memo"></TextView>
+				<EditText android:layout_height="wrap_content" android:id="@+id/etMemo"
+					android:layout_width="fill_parent" android:minLines="6"
+					android:gravity="top" android:textSize="15sp" android:hint="@string/memo_hint"></EditText>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout8"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:id="@+id/btnInit" android:layout_weight="1"
+			android:text="@string/initial" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		<Button android:id="@+id/btnAdd" android:layout_weight="1"
+			android:text="@string/add" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		<Button android:id="@+id/btnCancel" android:layout_weight="1"
+			android:text="@string/cancel" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+</LinearLayout>
